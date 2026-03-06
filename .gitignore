@@ -1,0 +1,11 @@
+node_modules/
+old-site/
+screenshot-local.png
+screenshot-original.png
+screenshot-local-mobile.png
+screenshot-original-mobile.png
+screenshot.mjs
+screenshot-mobile.mjs
+package.json
+package-lock.json
+*.code-workspace

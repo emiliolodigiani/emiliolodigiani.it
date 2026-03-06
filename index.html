@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emilio Lodigiani</title>
+    <meta name="description" content="Ingegnere informatico, imprenditore, consulente ecommerce. Fondatore di Tunca e Podere Montevalle.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        black: '#1a1a1a',
+                        gray: { DEFAULT: '#555' },
+                    },
+                    fontFamily: {
+                        display: ["'Special Gothic Expanded One'", "'Arial Black'", 'sans-serif'],
+                        heading: ["'Special Gothic Expanded One'", "'Arial Black'", 'sans-serif'],
+                        body: ["'JetBrains Mono'", "'Courier New'", 'monospace'],
+                    },
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top" class="font-body text-black bg-white leading-relaxed antialiased">
+
+    <!-- Header -->
+    <header class="py-5 border-b border-black/10">
+        <div class="max-w-[1300px] mx-auto px-6 md:px-12 flex justify-between items-center gap-6">
+            <a href="#top" class="font-body text-xs font-medium uppercase tracking-wider">Emilio Lodigiani</a>
+            <nav class="hidden md:flex items-center gap-7" aria-label="Navigazione principale desktop">
+                <a href="#chi-sono" class="font-body text-xs font-medium uppercase tracking-wider hover:opacity-60 transition-opacity duration-200">Chi sono</a>
+                <a href="#tunca" class="font-body text-xs font-medium uppercase tracking-wider hover:opacity-60 transition-opacity duration-200">Tunca</a>
+                <a href="#strategia" class="font-body text-xs font-medium uppercase tracking-wider hover:opacity-60 transition-opacity duration-200">Strategia eCommerce</a>
+                <a href="#podere" class="font-body text-xs font-medium uppercase tracking-wider hover:opacity-60 transition-opacity duration-200">Podere Montevalle</a>
+                <a href="#contatti" class="font-body text-xs font-medium uppercase tracking-wider hover:opacity-60 transition-opacity duration-200">Contatti</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden w-6 h-6 flex flex-col justify-center gap-1.5" aria-label="Apri menu" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="block w-full h-[2px] bg-black"></span>
+                <span class="block w-full h-[2px] bg-black"></span>
+                <span class="block w-full h-[2px] bg-black"></span>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden border-t border-black/10 mt-5">
+            <nav class="max-w-[1300px] mx-auto px-6 py-5 flex flex-col gap-4" aria-label="Navigazione principale mobile">
+                <a href="#chi-sono" data-mobile-link class="font-body text-xs font-medium uppercase tracking-wider hover:opacity-60 transition-opacity duration-200">Chi sono</a>
+                <a href="#tunca" data-mobile-link class="font-body text-xs font-medium uppercase tracking-wider hover:opacity-60 transition-opacity duration-200">Tunca</a>
+                <a href="#strategia" data-mobile-link class="font-body text-xs font-medium uppercase tracking-wider hover:opacity-60 transition-opacity duration-200">Strategia eCommerce</a>
+                <a href="#podere" data-mobile-link class="font-body text-xs font-medium uppercase tracking-wider hover:opacity-60 transition-opacity duration-200">Podere Montevalle</a>
+                <a href="#contatti" data-mobile-link class="font-body text-xs font-medium uppercase tracking-wider hover:opacity-60 transition-opacity duration-200">Contatti</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="chi-sono" class="pt-12 lg:pt-16">
+        <div class="max-w-[1300px] mx-auto px-6 md:px-12">
+            <h1 class="font-display text-[clamp(1.4rem,6.8vw,2.5rem)] md:text-[clamp(2.5rem,8.5vw,8.5rem)] leading-[0.9] uppercase mb-8 lg:mb-10 tracking-tight whitespace-nowrap">EMILIO LODIGIANI</h1>
+            <div class="grid grid-cols-1 md:grid-cols-[55%_1fr] gap-8 md:gap-12 pb-16 lg:pb-20">
+                <div class="overflow-hidden bg-[#ddd]">
+                    <img src="images/emilio.jpg" alt="Emilio Lodigiani" class="block w-full h-full object-cover">
+                </div>
+                <div class="md:pt-2">
+                    <h2 class="font-heading text-[clamp(1.3rem,2.5vw,1.65rem)] uppercase mb-6 leading-tight -tracking-[0.02em]">PIACERE DI CONOSCERTI!</h2>
+                    <div class="text-sm text-gray leading-[1.7] space-y-3">
+                        <p>Piacere di conoscerti, sono Emilio! Questo sito contiene i link alle mie attivit&agrave;, ma intanto ti parlo di me.</p>
+                        <p>Sono ingegnere informatico e sono stato full stack developer per un bel po', anche se ormai non programmo pi&ugrave; e mi ritengo piuttosto un imprenditore.</p>
+                        <p>Faccio consulenza con la mia piccola agenzia (Tunca), specialmente focalizzata sull'ecommerce.</p>
+                        <p>Sempre in ambito ecommerce ho una piattaforma di corsi on-demand, Strategia eCommerce. Con questo brand ho anche un Podcast.</p>
+                        <p>Ho una azienda agricola in provincia di Piacenza presso la quale ospito turisti e viaggiatori: Podere Montevalle.</p>
+                        <p>Sono istruttore di vela della Lega Navale Italiana, mi piace insegnare ai ragazzi e cerco di navigare il pi&ugrave; possibile.</p>
+                        <p>Vivo in campagna con le mie figlie, mi piace viaggiare e fare sport, anche se ogni tanto ho mal di schiena... 😅</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tunca -->
+    <section id="tunca" class="py-20 lg:py-24">
+        <div class="max-w-[1300px] mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-[55%_35%] gap-10 md:gap-16 items-start md:items-stretch md:justify-between min-h-[500px] md:min-h-[550px] lg:min-h-[600px]">
+                <div class="flex flex-col h-full order-2 md:order-1">
+                    <h2 class="font-heading text-[clamp(1.6rem,3.8vw,3rem)] leading-[1.05] uppercase -tracking-[0.02em] lg:max-w-[600px]">TUNCA &Egrave; LA MIA AGENZIA CHE SI OCCUPA DI <span class="circled">ECOMMERCE,</span> CONSULENZA E ASSISTENZA, SPECIALMENTE CON <span class="wavy-underline">SHOPIFY</span></h2>
+                    <a href="https://tunca.it" target="_blank" rel="noopener" class="mt-auto self-start inline-block py-3.5 px-10 border-2 border-black text-black text-[0.85rem] font-medium font-body text-center transition-all duration-200 hover:bg-black hover:text-white min-w-[250px]">Scopri</a>
+                </div>
+                <div class="aspect-square overflow-hidden bg-[#2a2a2a] flex items-center justify-center p-8 order-1 md:order-2 relative">
+                    <img src="images/corsi.png" alt="" class="absolute inset-0 w-full h-full object-cover">
+                    <img src="images/tunca.png" alt="Tunca" class="relative z-10 w-[55%] h-auto object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategia eCommerce -->
+    <section id="strategia" class="py-16 lg:py-20 lg:pb-24">
+        <div class="max-w-[1300px] mx-auto px-6 md:px-12">
+            <h2 class="strategia-title font-display leading-[0.95] uppercase -tracking-[0.02em]">STRATEGIA ECOMMERCE</h2>
+            <hr class="border-t border-black my-8 mb-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6">
+                <div class="flex flex-col">
+                    <div class="aspect-[16/10] overflow-hidden mb-5 relative">
+                        <img src="images/bg-mountains.jpg" alt="" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-white/[0.74]"></div>
+                        <img src="images/strategia-var.png" alt="Corsi on demand" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-auto h-auto max-w-[65%] max-h-[65%] object-contain">
+                    </div>
+                    <h3 class="font-heading text-lg uppercase mb-3 -tracking-[0.02em]">CORSI ON DEMAND</h3>
+                    <p class="text-sm text-gray leading-relaxed mb-6 grow">La tua formazione per l'ecommerce: comprendi e utilizza gli strumenti migliori per vendere online, in maniera semplice e veloce</p>
+                    <a href="https://strategiaecommerce.com" target="_blank" rel="noopener" class="block w-full py-3.5 px-10 border-2 border-black text-black text-[0.85rem] font-medium font-body text-center transition-all duration-200 hover:bg-black hover:text-white">Corsi</a>
+                </div>
+                <div class="flex flex-col">
+                    <div class="aspect-[16/10] overflow-hidden mb-5 relative">
+                        <img src="images/bg-mountains.jpg" alt="" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-white/[0.74]"></div>
+                        <img src="images/podcast.jpg" alt="Podcast" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-auto h-auto max-w-[65%] max-h-[65%] object-contain">
+                    </div>
+                    <h3 class="font-heading text-lg uppercase mb-3 -tracking-[0.02em]">PODCAST</h3>
+                    <p class="text-sm text-gray leading-relaxed mb-6 grow">Un podcast per imprenditori che vogliono creare, gestire e far crescere il loro eCommerce.</p>
+                    <a href="https://podcasts.apple.com/it/podcast/strategia-ecommerce/id1484856968" target="_blank" rel="noopener" class="block w-full py-3.5 px-10 border-2 border-black text-black text-[0.85rem] font-medium font-body text-center transition-all duration-200 hover:bg-black hover:text-white">Podcast</a>
+                </div>
+                <div class="flex flex-col">
+                    <div class="aspect-[16/10] overflow-hidden mb-5 relative">
+                        <img src="images/bg-mountains.jpg" alt="" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-white/[0.74]"></div>
+                        <img src="images/youtube.png" alt="Canale Youtube" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-auto h-auto max-w-[65%] max-h-[65%] object-contain">
+                    </div>
+                    <h3 class="font-heading text-lg uppercase mb-3 -tracking-[0.02em]">CANALE YOUTUBE</h3>
+                    <p class="text-sm text-gray leading-relaxed mb-6 grow">Una versione evoluta del Podcast, con approfondimenti e tanto altro, sempre sull'ecommerce.</p>
+                    <a href="https://www.youtube.com/@strategiaecommerce" target="_blank" rel="noopener" class="block w-full py-3.5 px-10 border-2 border-black text-black text-[0.85rem] font-medium font-body text-center transition-all duration-200 hover:bg-black hover:text-white">Canale Youtube</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Podere Montevalle -->
+    <section id="podere" class="bg-[#2a2a2a] text-white py-20 lg:py-24 lg:pb-20 relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none flex items-center overflow-hidden" aria-hidden="true">
+            <svg class="w-[250%] h-[80%] min-w-[3000px] overflow-visible" viewBox="0 0 6000 400" preserveAspectRatio="xMidYMid meet">
+                <defs>
+                    <path id="wave1" d="M0,200 C375,50 750,350 1125,200 C1500,50 1875,350 2250,200 C2625,50 3000,350 3375,200 C3750,50 4125,350 4500,200 C4875,50 5250,350 5625,200 C6000,50 6375,350 6750,200" />
+                </defs>
+                <text class="wave-text">
+                    <textPath href="#wave1">
+                        <animate attributeName="startOffset" from="0%" to="-50%" dur="40s" repeatCount="indefinite" />
+                        PODERE MONTEVALLE &#x2003; PODERE MONTEVALLE &#x2003; PODERE MONTEVALLE &#x2003; PODERE MONTEVALLE &#x2003; PODERE MONTEVALLE &#x2003; PODERE MONTEVALLE &#x2003; PODERE MONTEVALLE &#x2003; PODERE MONTEVALLE &#x2003;
+                    </textPath>
+                </text>
+            </svg>
+        </div>
+        <div class="max-w-[1300px] mx-auto px-6 md:px-12 relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div class="overflow-hidden max-w-[550px] mx-auto md:mx-0 bg-[#333]">
+                <img src="images/montevalle.jpeg" alt="Podere Montevalle" class="block w-full h-full object-cover">
+            </div>
+            <div class="text-center md:text-left md:flex md:flex-col md:justify-end md:items-start">
+                <h2 class="font-heading text-[clamp(1.3rem,2.5vw,1.65rem)] uppercase mb-4 leading-tight -tracking-[0.02em]">PODERE MONTEVALLE</h2>
+                <p class="text-[0.9rem] max-w-[320px] mx-auto md:mx-0 mb-8 leading-[1.7] text-white/80">Il Podere Montevalle &egrave; un antico insediamento agricolo nelle colline di Castelnuovo Fogliani, in provincia di Piacenza.</p>
+                <a href="https://montevalle.it" target="_blank" rel="noopener" class="inline-block py-3.5 px-10 border-2 border-white text-white text-[0.85rem] font-medium font-body text-center transition-all duration-200 hover:bg-white hover:text-black">Scopri il Podere</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contatti" class="bg-black text-white py-14 pb-6">
+        <div class="max-w-[1300px] mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 pb-12">
+                <div>
+                    <h2 class="font-heading text-[clamp(1.1rem,2.5vw,1.35rem)] uppercase mb-3 leading-tight -tracking-[0.02em]">VUOI ENTRARE IN CONTATTO CON ME?</h2>
+                    <p class="text-sm text-white/55 leading-relaxed">Ok. Mandami una email: entra in uno dei link in questa pagina e troverai i miei contatti.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="font-heading text-[0.8rem] uppercase mb-3 -tracking-[0.01em]">LEGAL</h4>
+                        <p class="text-xs text-white/50 leading-relaxed">Questo &egrave; un sito personale, trovi tutti i dettagli legali delle mie attivit&agrave; sui vari siti elencati in questa pagina.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-heading text-[0.8rem] uppercase mb-3 -tracking-[0.01em]">SOCIAL</h4>
+                        <div class="flex flex-col gap-1 mb-3">
+                            <a href="https://www.linkedin.com/in/emilio-alfredo-lodigiani-8b922245" target="_blank" rel="noopener" class="text-white underline text-xs font-medium uppercase tracking-wide underline-offset-2 transition-opacity duration-200 hover:opacity-60">LINKEDIN</a>
+                            <a href="https://github.com/emiliolodigiani" target="_blank" rel="noopener" class="text-white underline text-xs font-medium uppercase tracking-wide underline-offset-2 transition-opacity duration-200 hover:opacity-60">GITHUB</a>
+                            <a href="https://twitter.com/EALodigiani" target="_blank" rel="noopener" class="text-white underline text-xs font-medium uppercase tracking-wide underline-offset-2 transition-opacity duration-200 hover:opacity-60">X</a>
+                            <a href="https://www.facebook.com/emilio.lodigiani" target="_blank" rel="noopener" class="text-white underline text-xs font-medium uppercase tracking-wide underline-offset-2 transition-opacity duration-200 hover:opacity-60">FACEBOOK</a>
+                        </div>
+                        <p class="text-[0.7rem] text-white/35 mt-2">Avviso: non uso molto i social</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-10 text-right">
+                <span class="font-display text-[clamp(5rem,12vw,10rem)] uppercase tracking-wide leading-[0.85]">EAL</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('[data-mobile-link]');
+
+        if (mobileMenuButton && mobileMenu) {
+            const closeMobileMenu = () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', 'false');
+            };
+
+            mobileMenuButton.addEventListener('click', () => {
+                const isOpen = mobileMenu.classList.contains('hidden');
+                mobileMenu.classList.toggle('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+
+            mobileLinks.forEach((link) => {
+                link.addEventListener('click', closeMobileMenu);
+            });
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth >= 768) {
+                    closeMobileMenu();
+                }
+            });
+        }
+    </script>
+</body>
+</html>
